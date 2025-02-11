@@ -1,0 +1,21 @@
+// Внешние файлы ======================================================
+@use '../../node_modules/swiper/swiper-bundle.min';
+
+// Из папки libs =====================================================
+@use 'libs/tabs';
+@use 'libs/modal';
+
+// Базовые стили =======================================================
+@use 'base/reset';
+@use 'base/fonts';
+@use 'base/vars';
+@use 'base/mixins';
+@use 'base/global';
+
+// Компоненты ===========================================================
+@use 'components/header';
+@use 'components/footer';
+@use 'components/modal-gallery';
+
+// Страницы ================================================================
+@use 'pages/index';

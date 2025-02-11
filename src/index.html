@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('partials/head.html',{title:'Главная'})
+
+<body>
+    <div class="wrapper">
+        @@include('partials/header.html')
+
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__left">
+                            <h1 class="hero__title">Строительство
+                                и ремонт в Гомеле</h1>
+                            <p class="hero__text">Надежное будущее строим
+                                вместе </p>
+                            <button class="hero__btn btn">Получить консультацию </button>
+                        </div>
+                        <div class="hero__right">
+                            <div class="hero-slider-container">
+                                <div class="hero-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="img/hero-1.jpg" alt="Строительство
+                                           и ремонт в Гомеле" class="hero-slider__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/hero-2.jpg" alt="Строительство
+                                           и ремонт в Гомеле" class="hero-slider__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/hero-3.jpg" alt="Строительство
+                                           и ремонт в Гомеле" class="hero-slider__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/hero-4.jpg" alt="Строительство
+                                           и ремонт в Гомеле" class="hero-slider__img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="img/hero-5.jpg" alt="Строительство
+                                           и ремонт в Гомеле" class="hero-slider__img">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev">
+                                        <svg width="31" height="59" viewBox="0 0 31 59" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M29.7461 1L1 33.4185L29.7461 58.4923" stroke="#FF7A00" />
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <svg width="31" height="59" viewBox="0 0 31 59" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.25387 58.4922L30 26.0736L1.25387 0.999928" stroke="#FF7A00" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- how-work -->
+            <section class="how-work">
+                <div class="container">
+                    <div class="how-work__title-group h2-group">
+                        <h2 class="how-work__title h2">КАК МЫ РАБОТАЕМ</h2>
+                    </div>
+                    <div class="how-work__grid">
+                        <div class="how-work__grid-item">
+                            <p class="how-work__grid-text">Бесплатный выезд мастера на объект для оценки работы </p>
+                        </div>
+                        <div class="how-work__grid-item">
+                            <p class="how-work__grid-text">Обсуждение работы с заказчиком </p>
+                        </div>
+                        <div class="how-work__grid-item">
+                            <p class="how-work__grid-text">Оформление и подписание договора</p>
+                        </div>
+                        <div class="how-work__grid-item">
+                            <p class="how-work__grid-text">Выполнение работ в соответствии с пожеланиями заказчика</p>
+                        </div>
+                        <div class="how-work__grid-item how-work__grid-item--5">
+                            <p class="how-work__grid-text">Прием работы заказчиком и окончательный расчет</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- services -->
+            <section class="services">
+                <div class="container">
+                    <h2 class="services__title h2">НАШИ УСЛУГИ</h2>
+                    <div class="tabs tabs-services">
+                        <div class="tabs__header tabs-services__header">
+                            <button class="tabs__button tabs-services__button active">
+                                <p class="tabs-services__button-text">Отделочные
+                                    работы</p>
+                                <img src="img/services-icon-1.svg" alt="" class="tabs-services__button-icon">
+                            </button>
+                            <button class="tabs__button tabs-services__button">
+                                <p class="tabs-services__button-text">Строительство
+                                    домов</p>
+                                <img src="img/services-icon-2.svg" alt="" class="tabs-services__button-icon">
+                            </button>
+                            <button class="tabs__button tabs-services__button">
+                                <p class="tabs-services__button-text">Электрика</p>
+                                <img src="img/services-icon-3.svg" alt="" class="tabs-services__button-icon">
+                            </button>
+                            <button class="tabs__button tabs-services__button">
+                                <p class="tabs-services__button-text">Сантехника</p>
+                                <img src="img/services-icon-4.svg" alt="" class="tabs-services__button-icon">
+                            </button>
+                        </div>
+                        <div class="tabs__body tabs-services__body">
+                            <div class="tabs__body-list tabs-services__body-list">
+                                <div class="tabs__body-item tabs-services__item active">
+                                    <h3 class="tabs-services__item-title">Отделочные работы</h3>
+                                    <ul class="tabs-services__item-list">
+                                        <li class="tabs-services__item-list-item">Электромонтажные и сантехн ические
+                                            работы</li>
+                                        <li class="tabs-services__item-list-item">Демонтажные работы</li>
+                                        <li class="tabs-services__item-list-item">Штукатурные работы</li>
+                                        <li class="tabs-services__item-list-item">Малярные работы</li>
+                                        <li class="tabs-services__item-list-item">Монтаж ГКЛ</li>
+                                        <li class="tabs-services__item-list-item">Облицовка стен и потолков</li>
+                                        <li class="tabs-services__item-list-item">Укладка плитки</li>
+                                        <li class="tabs-services__item-list-item">Укладка всех видов наполных покрытий
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__body-item tabs-services__item">
+                                    <h3 class="tabs-services__item-title">Строительство домов</h3>
+                                    <ul class="tabs-services__item-list">
+                                        <li class="tabs-services__item-list-item">Профессиональная укладка блоков ПГС
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Укладка кирпича </li>
+                                        <li class="tabs-services__item-list-item">Укладка пазогребневых плит</li>
+                                        <li class="tabs-services__item-list-item">Монтаж плит</li>
+                                        <li class="tabs-services__item-list-item">Монтаж перекрытий</li>
+                                        <li class="tabs-services__item-list-item">монтаж балок и пермычек</li>
+                                        <li class="tabs-services__item-list-item">Изготовление монолитного пола</li>
+                                        <li class="tabs-services__item-list-item">Установка перегородок</li>
+                                        <li class="tabs-services__item-list-item">Установка вентиляционных каналов</li>
+                                        <li class="tabs-services__item-list-item">Кровельные работы любой сложности</li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__body-item tabs-services__item">
+                                    <h3 class="tabs-services__item-title">Электрика</h3>
+                                    <ul class="tabs-services__item-list">
+                                        <li class="tabs-services__item-list-item">Замена розеток и выключателей
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Перенос розеток и выключателей</li>
+                                        <li class="tabs-services__item-list-item">Замена электропроводки</li>
+                                        <li class="tabs-services__item-list-item">Сборка электросчетчиков</li>
+                                        <li class="tabs-services__item-list-item">Установка электросчетчиков</li>
+                                    </ul>
+                                </div>
+                                <div class="tabs__body-item tabs-services__item">
+                                    <h3 class="tabs-services__item-title">Сантехника</h3>
+                                    <ul class="tabs-services__item-list">
+                                        <li class="tabs-services__item-list-item">Перенос и установка счетчиков
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Монтаж и ремонт водопровода</li>
+                                        <li class="tabs-services__item-list-item">Монтаж отопления</li>
+                                        <li class="tabs-services__item-list-item">Монтаж канализации</li>
+                                        <li class="tabs-services__item-list-item">Замена и перенос полотенцесушителя
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Установка кранов на полотенцесушитель
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Установка инсталляций</li>
+                                        <li class="tabs-services__item-list-item">Установка всех видов сантех
+                                            оборудования</li>
+                                        <li class="tabs-services__item-list-item">Замена батарей отопления</li>
+                                        <li class="tabs-services__item-list-item">Замена и демонтаж радиатора отопления
+                                        </li>
+                                        <li class="tabs-services__item-list-item">Замена труб в ванной и туалете</li>
+                                        <li class="tabs-services__item-list-item">Замена труб в ванной</li>
+                                        <li class="tabs-services__item-list-item">Замена труб на пластиковые</li>
+                                        <li class="tabs-services__item-list-item">Монтаж трубопроводов ПВХ</li>
+                                        <li class="tabs-services__item-list-item">Замена и демонтаж радиатора отопления
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="services__text">Для многих ремонт — это что-то вроде стихийного бедствия, но чем
+                        тщательнее вы его спланируете, тем проще будет его пережить. А уютная, привлекательная и чистая
+                        квартира – это мечта любого человека. </p>
+                    <p class="services__text-orange">Давайте воплотим Ваши мечты в реальность!</p>
+                </div>
+            </section>
+
+            <!-- feedback -->
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__inner">
+                        <div class="feedback__left">
+                            <div class="feedback__form-block">
+                                <h2 class="feedback__title">ЗАПОЛНИТЕ ФОРМУ</h2>
+                                <div class="feedback-form">
+                                    <input type="text" class="feedback-form__input" placeholder="Ваше имя">
+                                    <input type="text" class="feedback-form__input" placeholder="Номер телефона">
+                                    <label class="feedback-form__label feedback-form__label--textarea">
+                                        <span class="feedback-form__label-text">Опишите Вашу заявку</span>
+                                        <textarea class="feedback-form__textarea"></textarea>
+                                    </label>
+                                    <button class="feedback-form__btn btn">Получить консультацию</button>
+                                    <label class="feedback-form__label feedback-form__label--checkbox">
+                                        <input type="checkbox" checked class="feedback-form__checkbox">
+                                        <span class="feedback-form__checkbox-text">Принимаю условия Политики
+                                            конфединциальности</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__right">
+                            <img src="img/feedback.png" class="feedback__img" alt="Обратная связь">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="img/feedback.png" class="feedback__img" alt="Обратная связь"> -->
+            </section>
+
+            <!-- about -->
+            <section class="about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__left">
+                            <h2 class="about__title">О НАС</h2>
+                            <ul class="about__list">
+                                <li class="about__list-item">Качественное проведение работ</li>
+                                <li class="about__list-item">Обсуждение работы на каждом этапе</li>
+                                <li class="about__list-item">Профессиональный инструмент</li>
+                                <li class="about__list-item">Начинаем работу без аванса</li>
+                                <li class="about__list-item">Доступные цены</li>
+                            </ul>
+                        </div>
+                        <div class="about__right">
+                            <div class="about__progress">
+                                <div class="about__progress-top">более</div>
+                                <div class="about__progress-center">
+                                    <div class="about__progress-center-wrapper">
+                                        <div class="about__progress-number">15</div>
+                                        <div class="about__progress-number">1000</div>
+                                        <div class="about__progress-number">500</div>
+                                    </div>
+                                </div>
+                                <div class="about__progress-bottom">
+                                    <div class="about__progress-bottom-wrapper">
+                                        <div class="about__progress-bottom-text">
+                                            лет
+                                            успешной
+                                            работы</div>
+                                        <div class="about__progress-bottom-text">м2
+                                            готовых
+                                            объектов</div>
+                                        <div class="about__progress-bottom-text">
+                                            довольных
+                                            клиентов</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- gallery -->
+            <section class="gallery">
+                <div class="container">
+                    <div class="gallery__title-group h2-group">
+                        <h2 class="gallery__title h2">ГАЛЕРЕЯ РАБОТ</h2>
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail-gallery__item test">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-1.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">ПЛИТКА</div>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery__item">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-2.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">КЛАДКА</div>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery__item">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-3.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">ОТДЕЛКА</div>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery__item">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-4.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">КРОВЛЯ</div>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery__item">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-5.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">САНТЕХНИКА</div>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery__item">
+                            <div class="thumbnail-gallery__border"></div>
+                            <div class="thumbnail-gallery__img-wrap">
+                                <img src="img/gallery-thumbnail-6.jpg" alt="Галерея" class="thumbnail-gallery__img">
+                                <div class="thumbnail-gallery__bottom">ЭЛЕКТРИКА</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- price-list -->
+            <section class="price-list">
+                <div class="container">
+                    <h2 class="price-list__title h2">ПРАЙС-ЛИСТ НА УСЛУГИ</h2>
+                    <div class="price-list__inner">
+                        <div class="price-list-slider-container">
+                            <div class="price-list-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tabs price-list-tabs">
+                                            <div class="tabs__header price-list-tabs__header">
+                                                <button
+                                                    class="tabs__button price-list-tabs__button active"><span>Отделка</span></button>
+                                                <button
+                                                    class="tabs__button price-list-tabs__button"><span>Строительство</span></button>
+                                                <button
+                                                    class="tabs__button price-list-tabs__button"><span>Кровля</span></button>
+                                                <button
+                                                    class="tabs__button price-list-tabs__button"><span>Сантехника</span></button>
+                                                <button
+                                                    class="tabs__button price-list-tabs__button"><span>Электрика</span></button>
+                                            </div>
+                                            <div class="tabs__body price-list-tabs__body">
+                                                <div class="tabs__body-list price-list-tabs__body-list">
+                                                    <div class="tabs__body-item price-list-tabs__body-item active">
+                                                        @@include('partials/price-list-table.html')
+                                                    </div>
+                                                    <div class="tabs__body-item price-list-tabs__body-item">
+                                                        @@include('partials/price-list-table.html')
+                                                    </div>
+                                                    <div class="tabs__body-item price-list-tabs__body-item">
+                                                        @@include('partials/price-list-table.html')
+                                                    </div>
+                                                    <div class="tabs__body-item price-list-tabs__body-item">
+                                                        @@include('partials/price-list-table.html')
+                                                    </div>
+                                                    <div class="tabs__body-item price-list-tabs__body-item">
+                                                        @@include('partials/price-list-table.html')
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar price-list-slider-scrollbar"></div>
+                        </div>
+                        <a href="files/price-list.txt" class="price-list__btn btn" download>Скачать весь прайс</a>
+                    </div>
+
+                </div>
+            </section><!-- /price-list -->
+
+            <!-- feedback 2 -->
+            <h2 class="feedback-2-section-title h2">СВЯЖИТЕСЬ С НАМИ ИЛИ ОСТАВЬТЕ ЗАЯВКУ</h2>
+            <section class="feedback feedback--2">
+                <div class="container">
+                    <div class="feedback__inner feedback__inner--2">
+                        <div class="feedback__left">
+                            <div class="feedback__form-block">
+                                <h2 class="feedback__title">ЗАПОЛНИТЕ ФОРМУ</h2>
+                                <div class="feedback-form">
+                                    <input type="text" class="feedback-form__input" placeholder="Ваше имя">
+                                    <input type="text" class="feedback-form__input" placeholder="Номер телефона">
+                                    <label class="feedback-form__label feedback-form__label--textarea">
+                                        <span class="feedback-form__label-text">Опишите Вашу заявку</span>
+                                        <textarea class="feedback-form__textarea"></textarea>
+                                    </label>
+                                    <button class="feedback-form__btn btn">Получить консультацию</button>
+                                    <label class="feedback-form__label feedback-form__label--checkbox">
+                                        <input type="checkbox" checked class="feedback-form__checkbox">
+                                        <span class="feedback-form__checkbox-text">Принимаю условия Политики
+                                            конфединциальности</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__right">
+                            <img src="img/feedback-2.png" class="feedback__img feedback__img--2" alt="Обратная связь">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="img/feedback.png" class="feedback__img" alt="Обратная связь"> -->
+            </section>
+
+        </main>
+
+        @@include('partials/footer.html')
+    </div>
+
+    @@include('partials/modals.html')
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

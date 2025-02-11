@@ -1,0 +1,135 @@
+@use './vars' as *;
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  // font-family: 'Nunito', 'sans-serif';
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  background-color: #0a0a0a;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  // overflow: hidden;
+}
+
+.container {
+  max-width: calc(1200px + 15px * 2);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+}
+
+.h2-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 54px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    max-width: 195px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--orange);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.23;
+  text-transform: uppercase;
+  color: var(--white);
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: var(--white);
+  padding: 12px 34px 13px;
+  background-color: var(--gray-dark);
+  border: 3px solid var(--orange);
+  border-radius: 10px;
+  transition: 0.3s;
+
+  &:hover {
+    // color: var(--orange);
+    background-color: var(--orange);
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 24px;
+  }
+}
+
+// :root {
+//   --scrollbarThumbColor: #ccc;
+//   --scrollbarBgColor: #eee;
+// }
+
+/* Для Firefox ===========================================================*/
+// @supports not selector(::-webkit-scrollbar) {
+//   // html,
+//   // body {
+//   //   scrollbar-width: thin;
+//   //   scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+//   // }
+
+//   body * {
+//     scrollbar-width: thin;
+//     scrollbar-color: var(--scrollbarThumbColor) var(--scrollbarBgColor);
+//   }
+// }
+
+// /* Для Chrome/Edge/Safari ================================================*/
+// body *::-webkit-scrollbar {
+//   width: 8px;
+//   height: 8px;
+// }
+
+// body *::-webkit-scrollbar-track {
+//   background-color: var(--scrollbarBgColor);
+//   border-radius: 10px;
+// }
+
+// body *::-webkit-scrollbar-thumb {
+//   background-color: var(--scrollbarThumbColor);
+//   border-radius: 10px;
+//   /* border: 3px solid var(--scrollbarBgColor); */
+// }
+// ======================================================================
